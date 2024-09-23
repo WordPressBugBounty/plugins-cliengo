@@ -1,0 +1,239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cliengo\n"
+"POT-Creation-Date: 2024-07-12 13:48-0600\n"
+"PO-Revision-Date: 2024-07-12 13:57-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ../admin/partials\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cliengo-admin-display.php:38
+msgid "Unlink Account"
+msgstr "Unlink Account"
+
+#: cliengo-admin-display.php:43
+msgid "Do you already have a cliengo account?"
+msgstr "Do you already have a cliengo account?"
+
+#: cliengo-admin-display.php:49
+msgid "Yes"
+msgstr "Yes"
+
+#: cliengo-admin-display.php:55
+msgid "I want to create one"
+msgstr "I want to create one"
+
+#: cliengo-admin-display.php:68
+msgid "Successfully uninstalled Cliengo Chatbot from your site"
+msgstr "Successfully uninstalled Cliengo Chatbot from your site"
+
+#: cliengo-admin-display.php:79
+msgid "Log into your Cliengo account"
+msgstr "Log into your Cliengo account"
+
+#: cliengo-admin-display.php:80
+msgid "Chatbot Configuration"
+msgstr "Chatbot Configuration"
+
+#: cliengo-admin-display.php:89
+msgid "Invalid username/password"
+msgstr "Invalid username/password"
+
+#: cliengo-admin-display.php:92
+msgid "Error logging in, please try again"
+msgstr "Error logging in, please try again"
+
+#: cliengo-admin-display.php:101
+msgid "Email"
+msgstr "Email"
+
+#: cliengo-admin-display.php:120 cliengo-admin-display.php:402
+msgid "hello@cliengo.com"
+msgstr "hello@cliengo.com"
+
+#: cliengo-admin-display.php:123 cliengo-admin-display.php:405
+msgid "Please enter an email containing @ and (.) mymail@gmail.com"
+msgstr "Please enter an email containing @ and (.) mymail@gmail.com"
+
+#: cliengo-admin-display.php:130 cliengo-admin-display.php:411
+msgid "Password"
+msgstr "Password"
+
+#: cliengo-admin-display.php:160
+msgid "6 characters minimum"
+msgstr "6 characters minimum"
+
+#: cliengo-admin-display.php:163
+msgid "Enter a password with at least 6 digits"
+msgstr "Enter a password with at least 6 digits"
+
+#: cliengo-admin-display.php:171
+#, php-format
+msgid ""
+"Did you register with your google or facebook account? %1$sClick here%2$s"
+msgstr ""
+"Did you register with your google or facebook account? %1$sClick here%2$s"
+
+#: cliengo-admin-display.php:180
+msgid "Log In"
+msgstr "Log In"
+
+#: cliengo-admin-display.php:200
+msgid "Provide your token"
+msgstr "Provide your token"
+
+#: cliengo-admin-display.php:207
+#, php-format
+msgid ""
+"Login at %1$sCliengo%2$s to obtain your chatbot token under Chatbots -> "
+"Installation section"
+msgstr ""
+"Login at %1$sCliengo%2$s to obtain your chatbot token under Chatbots -> "
+"Installation section"
+
+#: cliengo-admin-display.php:216
+msgid "Chatbot token entered is incorrect"
+msgstr "Chatbot token entered is incorrect"
+
+#: cliengo-admin-display.php:219
+msgid "Chatbot token update failed"
+msgstr "Chatbot token update failed"
+
+#: cliengo-admin-display.php:231
+msgid "Back to Login"
+msgstr "Back to Login"
+
+#: cliengo-admin-display.php:233
+msgid "Save changes"
+msgstr "Save changes"
+
+#: cliengo-admin-display.php:243
+msgid "Select the chatbot for this website"
+msgstr "Select the chatbot for this website"
+
+#: cliengo-admin-display.php:248
+msgid ""
+"Select the chatbot you want to be displayed on this website and start "
+"managing your new customers."
+msgstr ""
+"Select the chatbot you want to be displayed on this website and start "
+"managing your new customers."
+
+#: cliengo-admin-display.php:255
+msgid "Select the chat"
+msgstr "Select the chat"
+
+#: cliengo-admin-display.php:264
+msgid "Click to list websites..."
+msgstr "Click to list websites..."
+
+#: cliengo-admin-display.php:278
+msgid "Save"
+msgstr "Save"
+
+#: cliengo-admin-display.php:298
+msgid "Now you can go to Cliengo and start managing your clients."
+msgstr "Now you can go to Cliengo and start managing your clients."
+
+#: cliengo-admin-display.php:303
+msgid ""
+"You have already installed the chatbot on your website, now you can go to  "
+"Cliengo and start managing your new clients and also the conversations in "
+"the chatbot."
+msgstr ""
+"You have already installed the chatbot on your website, now you can go to  "
+"Cliengo and start managing your new clients and also the conversations in "
+"the chatbot."
+
+#: cliengo-admin-display.php:311
+msgid "This is how the chatbot widget looks on your website"
+msgstr "This is how the chatbot widget looks on your website"
+
+#: cliengo-admin-display.php:319
+msgid "Go to Cliengo"
+msgstr "Go to Cliengo"
+
+#: cliengo-admin-display.php:332
+msgid "Create an account at Cliengo, no credit card required."
+msgstr "Create an account at Cliengo, no credit card required."
+
+#: cliengo-admin-display.php:339
+msgid "Your password should have at least 8 characters."
+msgstr "Your password should have at least 8 characters."
+
+#: cliengo-admin-display.php:342
+msgid "Please provide a valid website. E.g. www.mysite.com"
+msgstr "Please provide a valid website. E.g. www.mysite.com"
+
+#: cliengo-admin-display.php:345
+msgid "Please fill out the entire form."
+msgstr "Please fill out the entire form."
+
+#: cliengo-admin-display.php:357
+msgid "Name"
+msgstr "Name"
+
+#: cliengo-admin-display.php:375
+msgid "Ex. John Smith"
+msgstr "Ex. John Smith"
+
+#: cliengo-admin-display.php:378
+msgid "Write your name without symbols or numbers"
+msgstr "Write your name without symbols or numbers"
+
+#: cliengo-admin-display.php:384
+msgid "E-mail"
+msgstr "E-mail"
+
+#: cliengo-admin-display.php:440
+msgid "8 characters minimum"
+msgstr "8 characters minimum"
+
+#: cliengo-admin-display.php:443
+msgid "Enter a password with at least 8 digits"
+msgstr "Enter a password with at least 8 digits"
+
+#: cliengo-admin-display.php:449
+msgid "Website"
+msgstr "Website"
+
+#: cliengo-admin-display.php:467
+msgid "www.mywebsite.com"
+msgstr "www.mywebsite.com"
+
+#: cliengo-admin-display.php:470
+msgid "Enter a website with a valid format (www.mywebsite.com)"
+msgstr "Enter a website with a valid format (www.mywebsite.com)"
+
+#: cliengo-admin-display.php:477
+msgid "Create account"
+msgstr "Create account"
+
+#: cliengo-admin-display.php:495
+msgid "Congratulations! you installed the Cliengo chatbot on your website"
+msgstr "Congratulations! you installed the Cliengo chatbot on your website"
+
+#: cliengo-admin-display.php:498
+msgid "Now you can go to"
+msgstr "Now you can go to"
+
+#: cliengo-admin-display.php:500
+msgid "and have a try."
+msgstr "and have a try."
+
+#~ msgid "Register & install Cliengo"
+#~ msgstr "Register & install Cliengo"
+
+#~ msgid "Ex. Juan Esteban"
+#~ msgstr "Ex. Juan Esteban"
+
+#~ msgid "Save change"
+#~ msgstr "Save change"

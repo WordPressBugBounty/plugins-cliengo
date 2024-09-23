@@ -1,0 +1,318 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,300italic');
+
+.cliengo * {
+    font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.cliengo i {
+    font-family: FontAwesome !important;
+}
+.cliengo .container {
+    max-width: 1090px !important;
+}
+
+.cliengo .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+}
+.cliengo .lds-ellipsis div {
+    position: absolute;
+    top: -10px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.cliengo .lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.cliengo .lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.cliengo .lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.cliengo .lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+.cliengo .btn:focus, .cliengo .btn:active {
+    outline: 0 !important;
+}
+
+.cliengo .btn {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    min-width: 160px !important;
+}
+.cliengo .btn-purple {
+    background: #7D60F5;
+    color: white;
+}
+
+.cliengo .link-btn {
+    float: right;
+    cursor: pointer;
+}
+.cliengo .link-btn:hover, .link-btn:focus {
+    text-decoration: none;
+}
+
+.cliengo .btn-purple:hover, .btn-purple:focus {
+    background: #563ebd;
+    color: white !important;
+}
+
+.cliengo .panel {
+    margin-bottom: 40px;
+}
+
+.cliengo .panel-heading, .panel {
+    color: black;
+    background: #fff;
+    border-color: #fff;
+}
+
+.cliengo .social-media-hint {
+    margin-top: 10px;
+}
+
+.cliengo .btn-secondary {
+    margin-top:10px;
+    border-color: #dcd8d8;
+    color: black;
+}
+.cliengo .back-icon {
+    margin-right: 12px;
+    color: #929292;
+}
+.cliengo .icon-right {
+    margin-left: 6px;
+}
+.cliengo .logout-icon {
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.cliengo .lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.cliengo .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.cliengo .cliengo-modal {
+    position: fixed;
+    width: calc(100vw);
+    height: calc(100vh);
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.25);
+    margin-left: -20px;
+}
+
+.cliengo .cliengo-modal-content {
+    position: absolute;
+    top: calc(50% - 240px);
+    left: calc(50% - 230px);
+    width: 600px;
+    padding: 20px 50px;
+    background: white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cliengo .cliengo-modal-content .cliengo-modal-body {
+    padding: 0px 10%;
+}
+
+/* The Close Button */
+.cliengo .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cliengo  .close:hover,
+.cliengo  .close:focus {
+    color: #6d6d6d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cliengo .cliengo-modal-content p {
+    font-size: 16px;
+}
+
+.cliengo .cliengo-modal-content img {
+    display: block;
+    margin: 16px auto;
+    height: 150px;
+    fill: grey;
+}
+
+.cliengo-highlight {
+    border: 2px solid #7D60F5 !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cliengo input[type=radio]:checked::before {
+    background-color: #515151;
+    margin: .1475rem;
+}
+
+.cliengo input[type=radio] {
+    border: 2px solid #b3b3b3;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.cliengo input[type=radio]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.cliengo input[type=radio]:checked {
+    border: 2px solid #515151;
+    display: flex;
+    align-items: center;
+}
+
+.cliengo .radio label > p {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.cliengo .radio .radio_label {
+    padding: 4px 8px 4px 24px;
+}
+
+.cliengo .radio .radio_label.active {
+    background-color: #e6e6e6;
+    border: 2px solid #9a9a9a;
+    border-radius: 4px;
+}
+
+.cliengo label {
+    margin-bottom: 2px;
+}
+
+.cliengo .input-wrapper {
+    position: relative;
+}
+
+.cliengo .input-wrapper > .input-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cliengo .input-wrapper > .password-toggle {
+    color: #555;
+    cursor: pointer;
+}
+
+.cliengo .input-wrapper > .password-feedback {
+    right: 25px !important;
+}
+
+.cliengo .input-wrapper > .input-success {
+    color: #1ABC9C;
+}
+
+.cliengo .error-feedback,
+.cliengo .input-wrapper > .input-error {
+    color: #B1346E;
+}
+
+.cliengo .with-error, .cliengo .with-error:focus {
+    border-color: #B1346E;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.cliengo .select-chatbot {
+    margin-bottom: 40px;
+    margin-top:20px;
+}
+
+.cliengo .select-wrapper {
+    position: relative;
+}
+
+.cliengo .select-wrapper > select {
+    max-width: 100%;
+}
+
+.cliengo .select-wrapper > .select-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #555;
+    background-color: #fff;
+    padding-left: 10px;
+}
