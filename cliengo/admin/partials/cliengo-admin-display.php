@@ -17,6 +17,7 @@
 <?php wp_nonce_field('update_session_action', 'update_session_nonce'); ?>
 <?php wp_nonce_field('wordpress_login_action', 'wordpress_login_nonce'); ?>
 <?php wp_nonce_field('wp_registration_action', 'wp_registration_nonce'); ?>
+<?php wp_nonce_field('restore_session_action', 'restore_session_nonce'); ?>
 <script type="text/javascript">
     var ajaxurl = "<?php echo esc_url(admin_url('admin-ajax.php')); ?>";
     var siteUrl = "<?php echo esc_url(get_site_url()); ?>";
@@ -32,6 +33,7 @@
     <input type="hidden" id="update_session_nonce" name="update_session_nonce" value="<?php echo esc_attr(wp_create_nonce('update_session_action')); ?>" />
     <input type="hidden" id="wordpress_login_nonce" name="wordpress_login_nonce" value="<?php echo esc_attr(wp_create_nonce('wordpress_login_action')); ?>" />
     <input type="hidden" id="wp_registration_nonce" name="wp_registration_nonce" value="<?php echo esc_attr(wp_create_nonce('wp_registration_action')); ?>" />
+    <input type="hidden" id="restore_session_nonce" name="restore_session_nonce" value="<?php echo esc_attr(wp_create_nonce('restore_session_action')); ?>" />
 	<div class="container" style="margin-top: 5%" v-if="!loading.rendering">
 		<div class="row col-lg-12" style="margin-bottom: 20px;">
 			<?php echo '<img src="'. esc_url(plugin_dir_url(__FILE__)) . '../images/logo.png'.'" alt="">' ?>

@@ -115,10 +115,11 @@ var app = new Vue({
      */
     restoreSession: function() {
       j.ajax({
-        type:"GET",
+        type:"POST",
         url: ajaxurl,
         data: {
-          action: 'restore_session'
+          action: 'restore_session',
+          restore_session_nonce: jQuery('#restore_session_nonce').val()
         },
         success:function(response) {
           response = JSON.parse(response);
@@ -204,7 +205,8 @@ var app = new Vue({
         data: {
           action: 'update_chatbot_token',
           chatbot_token: '',
-          position_chatbot: app.position_chatbot
+          position_chatbot: app.position_chatbot,
+          update_chatbot_token_nonce: jQuery('#update_chatbot_token_nonce').val()
         }
       });
     },

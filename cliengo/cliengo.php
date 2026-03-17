@@ -16,7 +16,7 @@
  * Plugin Name:       Cliengo - Chatbot
  * Plugin URI:        http://cliengo.com/?utm_source=wordpress_plugin&utm_medium=wordpress
  * Description:       Cliengo helps you escalate your business process by automating the different points of contact with your customers and providing 24/7 responses. Multi-language: English/Spanish/Portuguese
- * Version:           3.0.4
+ * Version:           3.0.5
  * Author:            Cliengo
  * Author URI:        http://cliengo.com/?utm_source=wordpress_plugin&utm_medium=wordpress
  * License:           GPL-2.0+
@@ -39,7 +39,7 @@ if ( !defined('ABSPATH') ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'CLIENGO_VERSION', '3.0.4' );
+define( 'CLIENGO_VERSION', '3.0.5' );
 
 /**
  * The code that runs during plugin activation.

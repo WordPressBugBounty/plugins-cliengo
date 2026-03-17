@@ -164,13 +164,11 @@ class Cliengo {
     $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
     $this->loader->add_action( 'admin_menu', $plugin_admin, 'cliengo_options_page' );
     $this->loader->add_action( 'wp_ajax_update_chatbot_token', $plugin_admin_form, 'update_chatbot_token' );
-    $this->loader->add_action( 'wp_ajax_nopriv_update_chatbot_token', $plugin_admin_form, 'update_chatbot_token' );
     $this->loader->add_action( 'wp_ajax_wordpress_login', $plugin_admin_form, 'wordpress_login' );
-    $this->loader->add_action('wp_ajax_wp_registration', $plugin_admin_form, 'wp_registration');
-    $this->loader->add_action( 'wp_ajax_nopriv_wp_registration', $plugin_admin_form, 'wp_registration' );
-    $this->loader->add_action('wp_ajax_update_session', $plugin_admin_form, 'update_session');
-    $this->loader->add_action('wp_ajax_update_chatbot_position', $plugin_admin_form, 'update_chatbot_position');
-    $this->loader->add_action('wp_ajax_restore_session', $plugin_admin_form, 'restore_session');
+    $this->loader->add_action( 'wp_ajax_wp_registration', $plugin_admin_form, 'wp_registration' );
+    $this->loader->add_action( 'wp_ajax_update_session', $plugin_admin_form, 'update_session' );
+    $this->loader->add_action( 'wp_ajax_update_chatbot_position', $plugin_admin_form, 'update_chatbot_position' );
+    $this->loader->add_action( 'wp_ajax_restore_session', $plugin_admin_form, 'restore_session' );
   }
 
   /**

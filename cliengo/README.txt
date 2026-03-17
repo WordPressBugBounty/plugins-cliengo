@@ -3,8 +3,8 @@ Contributors: cliengo
 Donate link: https://www/cliengo.com/
 Tags: cliengo, chatbot, leads
 Requires at least: 4.4
-Tested up to: 6.6.1
-Stable tag: 3.0.4
+Tested up to: 6.8
+Stable tag: 3.0.5
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Cliengo helps you scale your business by automating customer contact points and providing 24/7 responses.
 
 == Description ==
-Through proactive conversations, Cliengo’s [chatbot](https://www.cliengo.com/?utm_source=wordpress&utm_medium=plugin) and WhatsApp assist your company's commercial team by capturing the contact information of each website visitor: name, telephone number, email and query.
+Through proactive conversations, Cliengo's [chatbot](https://www.cliengo.com/?utm_source=wordpress&utm_medium=plugin) and WhatsApp assist your company's commercial team by capturing the contact information of each website visitor: name, telephone number, email and query.
 
 In this way, you can respond immediately to all the potential clients who visit your website, automating the conversation or intervening the best leads.
 
@@ -46,45 +46,78 @@ https://help.cliengo.com/hc/es/articles/115002918668-Instalaci%C3%B3n-en-Wordpre
 
 == Changelog ==
 
-= 0.0.1 =
-* Initial plugin.
-= 0.0.2 =
-* Added chatbot position configuration (for version 1 widget)
-= 0.0.3 =
-* Token configuration bug fixed.
-= 1.0.0 =
-* Bump to new version, but no breaking changes.
-* Added ID for detecting a wordpress installation.
-= 1.0.1 =
-* New images and typos fix.
+= 3.0.5 =
+* Security: Remove unauthenticated (nopriv) access to admin AJAX actions
+* Security: Add capability checks (manage_options) to all AJAX handlers
+* Security: Add nonce verification to restore_session endpoint
+* Security: Add server-side chatbot token format validation (prevents script injection)
+* Security: Sanitize all user inputs (sanitize_text_field, sanitize_email, esc_url_raw)
+* Security: Validate and sanitize session data via JSON decode/re-encode
+* Security: Whitelist chatbot position values (left/right only)
+* Security: Whitelist allowed option names in database updates
+* Security: Detect and reject inputs with stripped HTML/script tags
+* Fix: clearChatbotToken now sends nonce (was silently failing)
+* Fix: Add error handling for failed API requests (is_wp_error checks)
+* Tested up to WordPress 6.8
+
+= 3.0.4 =
+* Patch upgrade version error
+
+= 3.0.3 =
+* Limit access for not authorized users
+
+= 3.0.2 =
+* Patch security errors and warnings
+
+= 3.0.1 =
+* Update plugin
+
+= 3.0.0 =
+* Update plugin UI & UX
+
+= 2.0.4 =
+* Change name, description, texts of plugin
+
+= 2.0.3 =
+* Fixed wp table prefix issues
+
+= 2.0.2 =
+* Fixed keyword stuffing
+
+= 2.0.1 =
+New logo
+
 = 2.0.0 =
 * New user interface and improved user experience.
 * Bugs fixes.
 * Login and registration implemented, as well as automatic installation without providing cliengo token.
-= 2.0.1 =
-New logo
-= 2.0.2 =
-* Fixed keyword stuffing
-= 2.0.3 =
-* Fixed wp table prefix issues
-= 2.0.4 =
-* Change name, description, texts of plugin
-= 3.0.0 =
-* Update plugin UI & UX
-= 3.0.1 =
-* Update plugin
-= 3.0.2 =
-* Patch security errors and warnings
-= 3.0.3 =
-* Limit access for not authorized users
-= 3.0.4 =
-* Patch upgrade version error
+
+= 1.0.1 =
+* New images and typos fix.
+
+= 1.0.0 =
+* Bump to new version, but no breaking changes.
+* Added ID for detecting a wordpress installation.
+
+= 0.0.3 =
+* Token configuration bug fixed.
+
+= 0.0.2 =
+* Added chatbot position configuration (for version 1 widget)
+
+= 0.0.1 =
+* Initial plugin.
 
 == Upgrade Notice ==
 
-= 1.0 =
-No breakin changes
-= 2.0 =
-Improved plugin UI & features with breaking changes
+= 3.0.5 =
+Security update: fixes Missing Authorization and CSRF vulnerabilities. All users should update immediately.
+
 = 3.0.0 =
 Update plugin UI & UX
+
+= 2.0 =
+Improved plugin UI & features with breaking changes
+
+= 1.0 =
+No breaking changes
